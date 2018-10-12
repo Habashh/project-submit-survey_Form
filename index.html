@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Survey Page">
+    <meta name="keywords" content="Survey Page, Recode, Qaraqosh Coders, Coding Bootcamp">
+    <meta name="author" content="Zaid .A">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Submit Survey Page</title>
+</head>
+<body style="background-color: #FF9966">
+<div style="background-color: lightgreen"> <h1>The Survey Form</h1> </div> 
+
+<div> 
+<form action="/surveys/submitSurvey.html" method="post">
+<fieldset style="border: 3px groove (internal value); width:270px; background-color: lightblue; margin-top:0; margin-right:auto; margin-bottom:0; margin-left:auto">
+<legend style="font-size:22px ; color: #0000FF ; text-align:right">Survey Form</legend>
+  <input type="hidden" name="csrf_token" value="545jk5fd_42">
+<div><label for="f_name" style="font-family: Arial; font-size: 18px">Your First Name</label><br>
+  <input type="text" id="f_name" name="f_name" placeholder="Your first name" style="font-size: 18px; padding: 8px 10px; border: 1px solid #bdc7d8" required></div><br>
+<div><label for="l_name" style="font-family: Arial; font-size: 18px">Your Last Name</label><br>
+  <input type="text" id="l_name" name="l_name" placeholder="Your last name" style="font-size: 18px; padding: 8px 10px; border: 1px solid #bdc7d8" required ></div><br>
+<div><label for="email" style="font-family: Arial; font-size: 18px">Your Email Address</label><br>
+  <input type="email" id="email" name="email" placeholder="email address@" style="font-size: 18px; padding: 8px 10px; border: 1px solid #bdc7d8" required></div><br>
+<div><label style="font-family: Arial; font-size: 18px">Is The Project Done?</label><br>
+  <input type="radio" name="project_done" value="yes" style="font-family: Arial; font-size: 16px">Yes<br>
+  <input type="radio" name="project_done" value="no" style="font-family: Arial; font-size: 16px">No</div><br>
+<div><label style="font-family: Arial; font-size: 18px">Select Your Age</label><br>
+  <select name="age_range" style="font-family: Arial; font-size: 16px">
+  <option value="< 18" selected>< 18</option>
+  <option value="18-25">18-25</option>
+  <option value="> 25">> 25</option>
+  </select></div><br>
+<div><label for="project_description" style="font-family: Arial; font-size: 18px">The Project Discription</label><br>
+  <textarea id="project_description" name="project_description" rows="6" cols="60" placeholder="Write your discription about the project" style="font-size: 18px; padding: 8px 10px; border: 1px solid #bdc7d8" required>
+</textarea></div><br>
+<div><label style="font-family: Arial; font-size: 18px">Attach the project screenshot </label><br>
+<input type="file" name="project_screenshot" accept="image/*" multiple></div><br>
+<div><label style="font-family: Arial; font-size: 18px"></label><br>
+  <input type="submit" value="Submit Your Survey" style="border: 1px solid; border-radius: 5px; color: #fff; cursor: pointer; display: inline-block;
+     position: relative ; min-width: 194px; padding: 7px 20px;  text-align: center; background-color: #4CAF50 ; float: left"> 
+<input type="reset" value="Clear all" style="border: 1px solid; border-radius: 5px; color: #fff; cursor: pointer; display: inline-block;
+     position: relative ; min-width: 194px; padding: 7px 20px;  text-align: center; background-color: #4CAF50 ; float: right"></div>
+</fieldset>
+</form>
+</div>
+
+<footer>
+    &copy; 2018 Qaraqosh Coders. All Rights Reserved.
+  </footer>
+</body>
