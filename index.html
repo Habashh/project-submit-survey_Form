@@ -11,7 +11,7 @@
         <body background="images/background.jpg">
             <div style="background-color: rgb(189, 56, 189)"> <h1>The Survey Form</h1> </div> 
                 <div> 
-                <form action="/surveys/submitSurvey.html" method="post">
+                <form action="/surveys/submitSurvey.php" method="post">
                 <fieldset style="width:270px; background-color: rgb(79, 226, 79); margin-right:auto; margin-left:auto ; font-family: Arial; font-size: 18px">
                     <legend style="font-size:22px ; color: rgb(255, 102, 0) ; text-align:right">Survey Form</legend>
                     <input type="hidden" name="csrf_token" value="545jk5fd_42">
@@ -26,15 +26,15 @@
                     <input type="radio" name="project_done" value="no">No</div><br>
                     <div><label>Select Your Age</label><br>
                     <select name="age_range">
-                    <option value="< 18" selected> < 18 </option>
+                    <option value="<18" selected> < 18 </option>
                     <option value="18-25">18-25</option>
-                    <option value="> 25">> 25</option>
+                    <option value=">25">> 25</option>
                     </select></div><br>
                     <div><label>The Project Discription</label><br>
                         <textarea name="project_description" placeholder="Discribe the project" rows="8" cols="60"  required>
                         </textarea></div><br>
                     <div><label style="font-family: Arial; font-size: 18px">Attach the project screenshot </label><br>
-                    <input type="file" name="project_screenshot" accept="image/*" multiple></div><br>
+                    <input type="file[]" name="project_screenshot" accept="image/*" multiple></div><br>
                     <div><label style="font-family: Arial; font-size: 18px"></label><br>
                     <input type="submit" value="Submit Your Survey" style="background-color: rgb(55, 91, 190) ; float: left"> 
                     <input type="reset" value="Clear all" style="background-color: rgb(55, 91, 190) ; float: right"></div>
